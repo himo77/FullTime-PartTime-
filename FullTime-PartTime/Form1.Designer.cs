@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,11 +61,21 @@
             this.trackBar1.Size = new System.Drawing.Size(491, 90);
             this.trackBar1.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(671, 171);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label1);
@@ -81,6 +92,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
