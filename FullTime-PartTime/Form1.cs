@@ -17,15 +17,10 @@ namespace FullTime_PartTime
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void trackBar1_Scroll(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnWhatStatus_Click(object sender, EventArgs e)
-        {
-            decimal credits = numCredits.Value;
-
+            decimal credits = trkCredits.Value;
+            lblCredits.Text = credits.ToString();
 
             if (credits >= 12)
             {
@@ -39,10 +34,13 @@ namespace FullTime_PartTime
 
             {
                 lblStatus.Text = "Less than half time";
-                
-            }
 
+            }
         }
+
+        
+
+        
     }
 }
 
